@@ -1,10 +1,10 @@
 import React from 'react'
-import Calculator from './components/Calculator';
+import ToggleBackgroundColor from './components/ToggleBackgroundColor';
 
 const App = () => {
   return (
     <div>
-      <Calculator/>
+      <ToggleBackgroundColor/>
     </div>
   )
 }
