@@ -1,10 +1,15 @@
 import React from 'react'
-import Testimonials from './components/Testimonials';
+import Accordion from './components/Accordion';
+import { accordionData } from './utils/content';
 
 const App = () => {
   return (
     <div>
-      <Testimonials/>
+      <div className='accordion'>
+        {accordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content} />
+        ))}
+      </div>
     </div>
   )
 }
